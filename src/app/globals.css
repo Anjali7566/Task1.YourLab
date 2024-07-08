@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --image-border-color: black;
+}
+/* Dark Theme */
+
+[data-theme="dark"] {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+  --image-border-color: #666;
+}
+/* Cupcake Theme */
+
+[data-theme="cupcake"] {
+  --bg-color: #f8d7da;
+  --text-color: #495057;
+  --image-border-color: #f5c6cb;
+}
+/* Bumblebee Theme */
+
+[data-theme="bumblebee"] {
+  --bg-color: #f5c74d;
+  --text-color: #212529;
+  --image-border-color: #f1e7a7;
+}
+/* Synthwave Theme */
+
+[data-theme="synthwave"] {
+  --bg-color: #4b0082;
+  --text-color: #e6e6e6;
+  --image-border-color: #7f00ff;
+}
+/* Halloween Theme */
+
+[data-theme="halloween"] {
+  --bg-color: #ff6600;
+  --text-color: #000000;
+  --image-border-color: #ffcc00;
+}
+/* Fantasy Theme */
+
+[data-theme="fantasy"] {
+  --bg-color: #5a3d81;
+  --text-color: #dcdcdc;
+  --image-border-color: #9b5b9a;
+}
+/* Dracula Theme */
+
+[data-theme="dracula"] {
+  --bg-color: #282a36;
+  --text-color: #f8f8f2;
+  --image-border-color: #44475a;
+}
+/* Aqua Theme */
+
+[data-theme="aqua"] {
+  --bg-color: #00bcd4;
+  --text-color: #ffffff;
+  --image-border-color: #00acc1;
+}
+/* Luxury Theme */
+
+[data-theme="luxury"] {
+  --bg-color: #d4af37;
+  --text-color: #000000;
+  --image-border-color: #f5c542;
+}
+/* Night Theme */
+
+[data-theme="night"] {
+  --bg-color: #1c1c1c;
+  --text-color: #eaeaea;
+  --image-border-color: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
